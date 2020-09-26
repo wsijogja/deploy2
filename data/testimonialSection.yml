@@ -1,0 +1,18 @@
+---
+enable: true
+topTitle: Ulasan
+title: sedikit ulasan mengenai kami
+
+testimonial:
+  - name: Supratman S. Pd
+    comment: Menarik, dan dapat diandalkan.
+    time: Jan 20, 2020
+    star: 5
+  - name: Parmi Endah Dwi Astuti
+    comment: Terjangkau, panggilan mudah.
+    time: Jan 16, 2020
+    star: 4.2
+  - name: Herman Kusworo
+    comment: hasil installasi baik, pelayanan ramah, semoga awet.
+    time: Mar 08, 2020
+    star: 4.4

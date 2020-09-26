@@ -1,0 +1,61 @@
+<footer>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
+						</div>
+						<div class="col-md-3">
+							{{ $address := .Site.Params.address }}
+							<a href="tel:{{ $address.phone }}"><i class="fa fa-phone"></i>{{ $address.phone }}</a><br>
+							<a href="mailto:{{ $address.email }}"><i class="fa fa-envelope"></i>{{ $address.email }}</a><br>
+							<p><i class="fa fa-map-marker"></i>{{ $address.address }}</p>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="block">
+					<ul class="list-inline footer-menu">
+						{{ range site.Menus.footer }}
+						<li class="list-inline-item">
+							<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+						</li>
+						{{ end }}
+					</ul>
+					<ul class="list-inline footer-menu">
+						{{ range site.Menus.sosmet }}
+						<li class="list-inline-item">
+							<a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+						</li>
+						{{ end }}
+					</ul>
+					<p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry"></script> -->
+<!-- Snipcart public key -->
+<!-- {{with site.Params.snipcart_api}}<div hidden id="snipcart" data-api-key="{{.}}"></div>{{end}} -->
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $formhandler := resources.Get "js/form-handler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
+{{ $tokoinfo := resources.Get "js/tokoinfo.js" | minify }}
+<script src="{{ $tokoinfo.Permalink }}"></script>
+{{ $backbone := resources.Get "js/backbone.js" | minify }}
+<script src="{{ $backbone.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>

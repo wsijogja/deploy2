@@ -1,0 +1,13 @@
+---
+enable: true
+topTitle: Peforma kami
+title: Wahana Sarana Informatika
+subtitle: sekiranya bisa menjadi gambaran bagi anda dan kami kedepan
+
+skill:
+  - title: Kerapian
+    percent: 81
+  - title: Kecepatan
+    percent: 84
+  - title: Infrasturktur
+    percent: 89
