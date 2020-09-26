@@ -3,8 +3,71 @@ languageCode = "en-us"
 paginate = 6
 theme = "portio"
 title = "Wahana Sarana Informatika"
-
-
+[[menu.footer]]
+URL = "privacy-policy"
+name = "Privacy Policy"
+weight = 4
+[[menu.footer]]
+URL = "terms-conditions"
+name = "Terms & Conditions"
+weight = 3
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 2
+[[menu.footer]]
+URL = "blog"
+name = "Blog"
+weight = 1
+[[menu.main]]
+name = "Tentang"
+url = "#about"
+weight = 5
+[[menu.main]]
+name = "Blog"
+url = "#blog"
+weight = 4
+[[menu.main]]
+name = "Produk"
+url = "#portfolio"
+weight = 3
+[[menu.main]]
+name = "Layanan"
+url = "#service"
+weight = 2
+[[menu.main]]
+name = "Kontak"
+url = "#contact"
+weight = 1
+[[menu.sosmet]]
+URL = "https://www.bukalapak.com/u/wsijogja.my.id/"
+name = "Bukalapak"
+weight = 1
+[[menu.sosmet]]
+URL = "https://www.tokopedia.com/wsijogja.my.id/"
+name = "Tokopedia"
+weight = 2
+[[menu.sosmet]]
+URL = "https://www.instagram.com/wsijogja.my.id/"
+name = "Instagram"
+weight = 3
+[[menu.sosmet]]
+URL = "https://www.facebook.com/wsijogja.my.id/"
+name = "Facebook"
+weight = 4
+[params]
+blogPageURL = "blog"
+contactLink = "contact"
+copyright = "All right reserved copyright © Portio 2020"
+footerLogo = "images/contact/widget-logo.png"
+formspreeURL = "YOUR FORMSPREE URL"
+googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+logo = "images/site-navigation/logo.png"
+[params.address]
+address = "Daguran RT.119, Trimurti, Srandakan, Bantul, Yogyakarta."
+email = "service@wsijogja.my.id"
+openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
+phone = "+(85)7010 350 60"
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
@@ -15,7 +78,6 @@ link = "plugins/slick/slick.css"
 link = "plugins/font-awesome/css/font-awesome.min.css"
 [[params.plugins.css]]
 link = "plugins/magnafic-popup/magnific-popup.css"
-
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
@@ -32,80 +94,3 @@ link = "plugins/magnafic-popup/jquery.magnific-popup.min.js"
 link = "plugins/tweenmax/TweenMax.min.js"
 [[params.plugins.js]]
 link = "plugins/masonry/masonry.min.js"
-
-# Main Menu
-  [[menu.main]]
-    name = "Kontak"
-    url = "#contact"
-    weight = 1
-  [[menu.main]]
-    name = "Layanan"
-    url = "#service"
-    weight = 2
-  [[menu.main]]
-    name = "Produk"
-    url = "#portfolio"
-    weight = 3
-  [[menu.main]]
-    name = "Blog"
-    url = "#blog"
-    weight = 4
-  [[menu.main]]
-    name = "Tentang"
-    url = "#about"
-    weight = 5
-
-[[menu.sosmet]]
-name = "Facebook"
-#icon = "fa-facebook-official"
-URL = "https://www.facebook.com/wsijogja.my.id/"
-[[menu.sosmet]]
-name = "Instagram"
-#icon = "fa-instagram-square"
-URL = "https://www.instagram.com/wsijogja.my.id/"
-[[menu.sosmet]]
-name = "Tokopedia"
-#icon = "fa-tokopedia-square"
-URL = "https://www.tokopedia.com/wsijogja.my.id/"
-[[menu.sosmet]]
-name = "Bukalapak"
-#icon = "fa-bukalapak-square"
-URL = "https://www.bukalapak.com/u/wsijogja.my.id/"
-
-# footer menu
-[[menu.footer]]
-name = "Blog"
-URL = "blog"
-weight = 1
-
-[[menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 2
-
-[[menu.footer]]
-name = "Terms & Conditions"
-URL = "terms-conditions"
-weight = 3
-
-[[menu.footer]]
-name = "Privacy Policy"
-URL = "privacy-policy"
-weight = 4
-
-
-
-[params]
-	blogPageURL = "blog"
-	contactLink = "contact"
-	copyright = "All right reserved copyright © Portio 2020"
-	footerLogo = "images/contact/widget-logo.png"
-	formspreeURL = "YOUR FORMSPREE URL"
-	googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
-	logo = "images/site-navigation/logo.png"
-[params.address]
-	address = "Daguran RT.119, Trimurti, Srandakan, Bantul, Yogyakarta."
-	email = "service@wsijogja.my.id"
-	openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-	phone = "+(85)7010 350 60"
-
